@@ -1,3 +1,16 @@
+# Zadanie 2. (3pkt)
+# Napisz funkcję name_sorter, która przyjmie jako parametr listę imion.
+# Funkcja ma zwrócić słownik:
+#     klucz o nazwie male ma mieć jako wartość imiona męskie z listy wejściowej,
+#     klucz o nazwie female ma mieć jako wartość imiona żeńskie z listy wejściowej.
+# Dodatkowo, posortuj imiona w ramach swoich list.
+# Należy przyjąć, że imiona żeńskie, to te, które kończą się literą "a". Barnabę możemy spokojnie zignorować. ;-)
+#
+# Przykład:
+# names = ["Andrzej", "Henryk", "Alicja", "Cezary", "Barbara"]
+# print(name_sorter(names))
+# {'female': ['Alicja', 'Barbara'], 'male': ['Andrzej', 'Cezary', 'Henryk']}
+
 def name_sorter(names):
     list_mal = []
     list_fem = []
@@ -29,7 +42,7 @@ def name_sorter(names):
 
     return ""
 
+if __name__ == '__main__':
+    names = ["Andrzej", "Henryk", "Alicja", "Cezary", "Barbara"]
 
-names = ["Andrzej", "Henryk", "Alicja", "Cezary", "Barbara"]
-
-print(name_sorter(names))
+    print(name_sorter(names))
